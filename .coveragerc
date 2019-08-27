@@ -1,5 +1,5 @@
 [run]
-source = sii-xml-to-pdf
+source = sii_xml_to_pdf
 
 [report]
 exclude_lines =
