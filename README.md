@@ -1,13 +1,28 @@
-# SII-xml-to-pdf
+# SII Beatify
 
-## Setup
-```sh
+## pre requirements
+
+You need install `pre-commit`
+
+* MacOs `brew install pre-commit`
+
+
+## Install
+
+# On Docker (recommend)
+```bash
+docker-compose build
+pre-commit install
+```
+
+# Local
+
+```bash
 # Install dependencies
 pipenv install --dev
 
 # Setup pre-commit and pre-push hooks
-pipenv run pre-commit install -t pre-commit
-pipenv run pre-commit install -t pre-push
+pre-commit install
 ```
 
 ## Credits
