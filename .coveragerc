@@ -1,5 +1,5 @@
 [run]
-source = sii_xml_to_pdf
+source = sii_beautify
 
 [report]
 exclude_lines =
