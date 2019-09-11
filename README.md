@@ -25,5 +25,11 @@ pipenv install --dev
 pre-commit install
 ```
 
+# How install packages
+
+```bash
+docker-compose run --rm app pipenv install flask
+```
+
 ## Credits
 This package was created with Cookiecutter and the [sourceryai/python-best-practices-cookiecutter](https://github.com/sourceryai/python-best-practices-cookiecutter) project template.

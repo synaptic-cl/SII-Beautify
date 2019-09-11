@@ -8,12 +8,17 @@ python_version = "3.7"
 
 [packages]
 flask = "*"
+xmltodict = "*"
+beautifulsoup4 = "*"
+lxml = "*"
+pdf417 = "*"
+pdfkit = "*"
 
 [dev-packages]
 black = "==19.3b0"
-flake8 = "*"
 isort = "*"
 mypy = "*"
 pre-commit = "*"
 pytest = "*"
 pytest-cov = "*"
+flake8 = "*"

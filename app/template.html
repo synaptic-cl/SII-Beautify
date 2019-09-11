@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>Nombre:</td>
+            <td>{{emisorName}}</td>
+        </tr>
+        <tr>
+            <td>Rut:</td>
+            <td>{{emisorRut}}</td>
+        </tr>
+        <tr>
+            <td>Giro:</td>
+            <td>{{emisorGiro}}</td>
+        </tr>
+        <tr>
+            <td>Rut:</td>
+            <td>{{emidorAddress}}</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>Factura Electrónica:</td>
+            <td>{{folio}}</td>
+        </tr>
+        <tr>
+            <td>Fecha de Emisión:</td>
+            <td>{{dateTransmitter}}</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>Nombre:</td>
+            <td>{{receptorName}}</td>
+        </tr>
+        <tr>
+            <td>Rut:</td>
+            <td>{{receptorRut}}</td>
+        </tr>
+        <tr>
+            <td>Giro:</td>
+            <td>{{receptorGiro}}</td>
+        </tr>
+        <tr>
+            <td>Rut:</td>
+            <td>{{receptorAddress}}</td>
+        </tr>
+    </table>
+
+    <table border="2">
+        <tr>
+            <th>Cantidad</th>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Descripción</th>
+        </tr>
+        {% for row in details %}
+            <tr>
+                <td>{{row['count']}}</td>
+                <td>{{row['item']}}</td>
+                <td>{{row['price']}}</td>
+                <td>{{row['description']}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <table>
+        {% if totalNeto %}
+            <tr>
+                <td>Neto:</td>
+                <td>{{totalNeto}}</td>
+            </tr>
+        {% endif %}
+        {% if totalIva %}
+            <tr>
+                <td>Iva:</td>
+                <td>{{totalIva}}</td>
+            </tr>
+        {% endif %}
+        <tr>
+            <td>Total:</td>
+            <td>{{total}}</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>Resolución:</td>
+            <td>{{resolution}}</td>
+        </tr>
+    </table>
+
+</body>
+</html>

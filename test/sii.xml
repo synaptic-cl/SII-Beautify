@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnvioDTE xmlns="http://www.sii.cl/SiiDte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://www.sii.cl/SiiDte EnvioDTE_v10.xsd">
+<SetDTE ID="SDTE850780238">
+  <Caratula version="1.0">
+    <RutEmisor>66889170-7</RutEmisor>
+    <RutEnvia>7679923-3</RutEnvia>
+    <RutReceptor>61826800-6</RutReceptor>
+    <FchResol>2014-10-21</FchResol>
+    <NroResol>99</NroResol>
+    <TmstFirmaEnv>2019-08-16T12:37:22</TmstFirmaEnv>
+    <SubTotDTE>
+      <TpoDTE>34</TpoDTE>
+      <NroDTE>1</NroDTE>
+    </SubTotDTE>
+  </Caratula>
+<DTE version="1.0" xmlns="http://www.sii.cl/SiiDte">
+  <!-- O Win32 Chrome 76 central VERSION: v20190409 -->
+<Documento ID="MiPE76889170-9426">
+    <Encabezado>
+      <IdDoc>
+        <TipoDTE>34</TipoDTE>
+        <Folio>957</Folio>
+        <FchEmis>2019-08-16</FchEmis>
+        <TpoTranCompra>1</TpoTranCompra>
+        <TpoTranVenta>1</TpoTranVenta>
+        <FmaPago>2</FmaPago>
+      </IdDoc>
+      <Emisor>
+        <RUTEmisor>66889170-7</RUTEmisor>
+        <RznSoc>EMPRESA</RznSoc>
+        <GiroEmis>GIRO EMPRESA</GiroEmis>
+        <Telefono>2 292</Telefono>
+        <CorreoEmisor>CONTANCT@EMPRESA.CL`</CorreoEmisor>
+        <Acteco></Acteco>
+        <CdgSIISucur></CdgSIISucur>
+        <DirOrigen>CALLAO</DirOrigen>
+        <CmnaOrigen>LAS CONDES</CmnaOrigen>
+        <CiudadOrigen>SANTIAGO</CiudadOrigen>
+      </Emisor>
+      <Receptor>
+        <RUTRecep>61826800-6</RUTRecep>
+        <RznSocRecep>EMPRESA RECEPTORA</RznSocRecep>
+        <GiroRecep>GIRO EMPRESA RECEPTORA</GiroRecep>
+        <Contacto></Contacto>
+        <DirRecep>GENERAL CALDERON</DirRecep>
+        <CmnaRecep>PROVIDENCIA</CmnaRecep>
+        <CiudadRecep>SANTIAGO</CiudadRecep>
+      </Receptor>
+      <Totales>
+        <MntExe>23771100</MntExe>
+        <MntTotal>23771100</MntTotal>
+      </Totales>
+    </Encabezado>
+    <Detalle>
+      <NroLinDet>1</NroLinDet>
+      <NmbItem>Desarrollo de Software</NmbItem>
+      <DscItem>Desarrollo Plataforma</DscItem>
+      <QtyItem>1.00</QtyItem>
+      <PrcItem>23771100.00</PrcItem>
+      <MontoItem>23771100</MontoItem>
+    </Detalle>
+    <Referencia>
+      <NroLinRef>1</NroLinRef>
+      <TpoDocRef>801</TpoDocRef>
+      <FolioRef>4500134835</FolioRef>
+      <FchRef>2019-07-09</FchRef>
+      <RazonRef>CONSULTORIA Y ASESORIA IMPLEMENTACION</RazonRef>
+    </Referencia>
+    <Referencia>
+      <NroLinRef>2</NroLinRef>
+      <TpoDocRef>HES</TpoDocRef>
+      <FolioRef>1000393581</FolioRef>
+      <FchRef>2019-08-16</FchRef>
+      <RazonRef>CONSULTORIA Y ASESORIA IMPLEMENTACION</RazonRef>
+    </Referencia>
+<TED version="1.0"><DD><RE>66889170-7</RE><TD>34</TD><F>957</F><FE>2019-08-16</FE><RR>61826800-6</RR><RSR>EMPRESA RECEPTORA</RSR><MNT>23771100</MNT><IT1>Desarrollo de Software</IT1><CAF version="1.0"><DA><RE>66889170-7</RE><RS>EMPRESA</RS><TD>34</TD><RNG><D>957</D><H>957</H></RNG><FA>2019-08-16</FA><RSAPK><M></M><E>Aw==</E></RSAPK><IDK>300</IDK></DA><FRMA algoritmo="SHA1withRSA"></FRMA></CAF><TSTED>2019-08-16T12:30:54</TSTED></DD><FRMT algoritmo="SHA1withRSA"></FRMT></TED>
+    <TmstFirma>2019-08-16T12:30:54</TmstFirma>
+
+  </Documento>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<Reference URI="#MiPE76889170-9426">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<DigestValue>=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>
+</SignatureValue>
+<KeyInfo>
+<KeyValue>
+<RSAKeyValue>
+<Modulus>
+</Modulus>
+<Exponent></Exponent>
+</RSAKeyValue>
+</KeyValue>
+<X509Data>
+<X509Certificate>
+</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></DTE></SetDTE>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<Reference URI="#SDTE850780238">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<DigestValue></DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>
+</SignatureValue>
+<KeyInfo>
+<KeyValue>
+<RSAKeyValue>
+<Modulus>
+</Modulus>
+<Exponent>AQAB</Exponent>
+</RSAKeyValue>
+</KeyValue>
+<X509Data>
+<X509Certificate>
+</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature></EnvioDTE>
