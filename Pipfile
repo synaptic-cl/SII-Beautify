@@ -12,7 +12,7 @@ xmltodict = "*"
 beautifulsoup4 = "*"
 lxml = "*"
 pdf417 = "*"
-pdfkit = "*"
+weasyprint = "*"
 
 [dev-packages]
 black = "==19.3b0"

@@ -1,4 +1,4 @@
-# SII Beatify
+# SII Beautify
 
 ## pre requirements
 

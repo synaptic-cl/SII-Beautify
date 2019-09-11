@@ -3,9 +3,9 @@ import os
 from xml.etree import ElementTree as ET
 
 import jinja2
-import pdfkit
 import xmltodict
 from bs4 import BeautifulSoup
+from weasyprint import HTML
 
 
 def is_xml(xml):
@@ -45,7 +45,7 @@ def to_currency(value):
 
 
 def html_to_pdf(html):
-    return pdfkit.from_string(html, False)
+    return HTML(string=html).write_pdf()
 
 
 def render_template(file, **data):

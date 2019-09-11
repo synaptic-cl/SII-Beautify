@@ -1,7 +1,5 @@
 from datetime import datetime
 
-# import lxml.etree as ET
-# import pdf417
 from bs4 import BeautifulSoup
 
 from .utils import render_template, to_currency
