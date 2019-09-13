@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=["POST"])
 def index():
-    type_format = request.values.get("format")
+    type_format = request.values.get("format", "").lower()
     if not request.files:
         return json.dumps({"error": "You must send a file"}), 400
     file = request.files.get("xml")

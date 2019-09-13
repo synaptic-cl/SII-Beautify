@@ -30,6 +30,14 @@ def test_xml_to_html(client):
         assert is_html(response.data)
 
 
+def test_xml_to_html_upper_format(client):
+    with client as c:
+        file = io.BytesIO(open(os.path.join(PATH, "sii.xml"), "rb").read())
+        response = c.post("/", data={"format": "HTML", "xml": (file, "sii.xml")})
+        assert response.status_code == 200
+        assert is_html(response.data)
+
+
 def test_xml_to_pdf(client):
     with client as c:
         file = io.BytesIO(open(os.path.join(PATH, "sii.xml"), "rb").read())
