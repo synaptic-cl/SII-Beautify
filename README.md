@@ -18,7 +18,7 @@ Options:
 curl --request POST \
 -F format=html \
 -F xml=@/xml/file.xml \
-https://sii_beautify.services.synaptic.cl
+https://us-central1-slack-services.cloudfunctions.net/sii_beautify
 ```
 
 
@@ -30,7 +30,7 @@ curl --request POST \
 -F format=pdf \
 -F xml=@/xml/file.xml \
 -o file.pdf
-https://sii_beautify.services.synaptic.cl
+https://us-central1-slack-services.cloudfunctions.net/sii_beautify
 ```
 
 
@@ -41,7 +41,7 @@ https://sii_beautify.services.synaptic.cl
 curl --request POST \
 -F format=json \
 -F xml=@/xml/file.xml \
-https://sii_beautify.services.synaptic.cl
+https://us-central1-slack-services.cloudfunctions.net/sii_beautify
 ```
 
 
