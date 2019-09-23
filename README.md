@@ -2,6 +2,8 @@
 
 Convert XML file from SII (http://home.sii.cl) to PDF, HTML or JSON.
 
+Page: https://us-central1-slack-services.cloudfunctions.net/sii_beautify
+
 ## How to use
 
 Options:
