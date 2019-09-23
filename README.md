@@ -7,7 +7,7 @@ Convert XML file from SII (http://home.sii.cl) to PDF, HTML or JSON.
 Options:
 
 * `xml`: file path you want to convert
-* `format`:
+* `format`: 
   * `html`
   * `pdf`
   * `json`
@@ -77,8 +77,6 @@ docker-compose run --rm app pipenv run pytest --cov --cov-fail-under=100
 
 # Report HTML
 docker-compose run --rm app pipenv run pytest --cov --cov-report=html
-# open Browser (MacOs)
-open htmlcov/index.html
 ```
 
 

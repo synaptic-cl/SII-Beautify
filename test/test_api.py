@@ -63,6 +63,17 @@ def test_xml_error_without_file(client):
         assert json.loads(response.data)["error"] == "You must send a file"
 
 
+def test_xml_error_without_format(client):
+    with client as c:
+        response = c.post("/", data={})
+        assert response.status_code == 400
+        assert is_json(response.data)
+        assert (
+            json.loads(response.data)["error"]
+            == "You must add `format=[html,json,pdf]` to formData"
+        )
+
+
 def test_xml_error_not_xml(client):
     with client as c:
         file = io.BytesIO(b"")
