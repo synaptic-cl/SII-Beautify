@@ -1,8 +1,14 @@
-FROM python:3.7
+FROM python:3.7-slim
+
+LABEL maintainer="Héctor Villarroel hvillarroel@synaptic.cl"
+
+RUN apt-get update \
+    && apt-get install -y \
+    git gcc libsasl2-dev \
+    libldap2-dev libssl-dev graphviz
 
 RUN pip install --upgrade pip &&\
-    pip install pipx pipenv &&\
-    pipx ensurepath
+    pip install pipenv
 
 WORKDIR /app
 
