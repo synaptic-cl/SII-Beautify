@@ -1,15 +1,13 @@
 # SII Beautify
 
-Converto XML from SII (http://home.sii.cl) to PDF, HTML or JSON
-
-
+Convert XML file from SII (http://home.sii.cl) to PDF, HTML or JSON.
 
 ## How to use
 
 Options:
 
 * `xml`: file path you want to convert
-* `format`: 
+* `format`:
   * `html`
   * `pdf`
   * `json`
@@ -48,38 +46,70 @@ https://sii_beautify.services.synaptic.cl
 
 
 
+## Development
 
-
-## pre requirements
+### pre requirements
 
 You need install `pre-commit`
 
 * MacOs `brew install pre-commit`
 
+### Install
 
-## Install
-
-# On Docker (recommend)
 ```bash
 docker-compose build
 pre-commit install
 ```
 
-# Local
+
+
+### Test
 
 ```bash
-# Install dependencies
-pipenv install --dev
-
-# Setup pre-commit and pre-push hooks
-pre-commit install
+docker-compose run --rm app pipenv run pytest
 ```
 
-# How install packages
+Coverage
+
+```bash
+# coverage 100%
+docker-compose run --rm app pipenv run pytest --cov --cov-fail-under=100
+
+# Report HTML
+docker-compose run --rm app pipenv run pytest --cov --cov-report=html
+# open Browser (MacOs)
+open htmlcov/index.html
+```
+
+
+
+### How install packages
 
 ```bash
 docker-compose run --rm app pipenv install flask
 ```
 
-## Credits
-This package was created with Cookiecutter and the [sourceryai/python-best-practices-cookiecutter](https://github.com/sourceryai/python-best-practices-cookiecutter) project template.
+
+
+## Deploy in GCP functions
+
+Quickstart https://cloud.google.com/functions/docs/quickstart-python
+
+
+
+```bash
+gcloud functions deploy sii_beautify --runtime python37 --trigger-http --memory 128MB
+```
+
+
+
+
+
+## Swagger UI
+
+
+
+```bash
+docker run -p 80:8080 -e SWAGGER_JSON=/tmp/gcp_endpoints.yml -v ${pwd}/:/tmp swaggerapi/swagger-ui
+```
+
