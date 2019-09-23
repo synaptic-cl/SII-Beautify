@@ -7,7 +7,7 @@ Convert XML file from SII (http://home.sii.cl) to PDF, HTML or JSON.
 Options:
 
 * `xml`: file path you want to convert
-* `format`: 
+* `format`:
   * `html`
   * `pdf`
   * `json`
@@ -98,16 +98,3 @@ Quickstart https://cloud.google.com/functions/docs/quickstart-python
 ```bash
 gcloud functions deploy sii_beautify --runtime python37 --trigger-http --memory 128MB
 ```
-
-
-
-
-
-## Swagger UI
-
-
-
-```bash
-docker run -p 80:8080 -e SWAGGER_JSON=/tmp/gcp_endpoints.yml -v ${pwd}/:/tmp swaggerapi/swagger-ui
-```
-
