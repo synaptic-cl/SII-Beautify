@@ -1,0 +1,45 @@
+swagger: '2.0'
+info:
+  title: SII Beautify
+  description: Api
+  version: 1.0.0
+# host: "us-central1-slack-services.cloudfunctions.net"
+host: "localhost:5000"
+schemes:
+  - http
+paths:
+  /sii_beautify/:
+    post:
+      summary: "Greet a user"
+      # operationId: hello
+      consumes:
+        # - "application/x-www-form-urlencoded"
+        - "multipart/form-data"
+      produces:
+        # - "text/html"
+        # - "application/xml"
+        - "application/json"
+      parameters:
+        - name: "format"
+          in: "formData"
+          type: "string"
+          description: "Format Response"
+          required: true
+          enum:
+            - "html"
+            - "pdf"
+            - "json"
+        - name: "xml"
+          in: "formData"
+          type: "file"
+          description: "file to upload"
+          required: true
+      x-google-backend:
+        address: https://us-central1-slack-services.cloudfunctions.net/sii_beautify
+      responses:
+        default:
+          description: "successful operation"
+        '200':
+          description: A successful response
+          schema:
+            type: string
