@@ -100,3 +100,7 @@ Quickstart https://cloud.google.com/functions/docs/quickstart-python
 ```bash
 gcloud functions deploy sii_beautify --runtime python37 --trigger-http --memory 128MB
 ```
+
+## Credits
+
+This package was created with Cookiecutter and the [sourceryai/python-best-practices-cookiecutter](https://github.com/sourceryai/python-best-practices-cookiecutter) project template.
