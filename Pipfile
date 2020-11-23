@@ -13,6 +13,7 @@ beautifulsoup4 = "*"
 lxml = "*"
 pdf417 = "*"
 weasyprint = "*"
+Pillow = ">=7.1.0"
 
 [dev-packages]
 black = "==19.3b0"
